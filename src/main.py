@@ -7,13 +7,13 @@ def print_output(path, moda, total_time, start, goal, nodes, elapsed_time):
     if path:
         print(f"\nThe fastest route from {start} to {goal}:")
         for i in range(len(path) - 1):
-            print(f"{path[i]} ({moda[i]}) → ", end="")
+            print(f"{path[i]} ({moda[i]}) → ")
         print(path[-1])
         print(f"Total travel time: {total_time} minutes")
     else:
         print(f"No route found from {start} to {goal}.")
     print(f"Nodes visited: {nodes}")
-    print(f"Time taken: {elapsed_time:.5f} s\n")
+    print(f"Time taken: {elapsed_time:.5f} µs\n")
 
 def main():
     while True:
@@ -48,7 +48,8 @@ def main():
             print("Invalid algorithm choice.")
             return
 
-        elapsed_time = time.time() - start_time
+        end_time = time.time()
+        elapsed_time = (end_time - start_time) * 1_000_000
         print_output(path, moda, total_time, start, goal, nodes, elapsed_time)
 
         print("Visualizing state space tree...")
