@@ -12,7 +12,7 @@ graph_route = {
     'Grogol': [('Taman Kota', 5, 'KRL'), ('Duri', 4, 'KRL'), ('Bendungan Hilir / Semanggi', 38, 'TJ')],
     'Serpong': [('Pondok Ranji', 14, 'KRL')],
     'Pondok Ranji': [('Serpong', 14, 'KRL'), ('Kebayoran', 7, 'KRL')],
-    'Kebayoran': [('Kebayoran', 7, 'KRL'), ('Tanah Abang', 11, 'KRL'), ('Blok M / ASEAN', 18, 'TJ')],
+    'Kebayoran': [('Pondok Ranji', 7, 'KRL'), ('Tanah Abang', 11, 'KRL'), ('Blok M / ASEAN', 18, 'TJ')],
     'Bogor': [('Citayam', 20, 'KRL')],
     'Citayam': [('Bogor', 20, 'KRL'), ('Depok', 10, 'KRL')],
     'Depok': [('Citayam', 10, 'KRL'), ('Cikoko', 23, 'KRL')],
@@ -25,6 +25,7 @@ graph_route = {
     'Bendungan Hilir / Semanggi': [('Blok M / ASEAN', 6, 'MRT'), ('Sudirman / Dukuh Atas', 4, 'MRT'), ('Blok M / ASEAN', 30, 'TJ'), ('Sudirman / Dukuh Atas', 11, 'TJ'), ('Pancoran', 12, 'TJ'), ('Grogol', 38, 'TJ')],
     'Bundaran HI': [('Sudirman / Dukuh Atas', 3, 'MRT'), ('Sudirman / Dukuh Atas', 8, 'TJ'), ('Monas', 10, 'TJ')],
     'Monas': [('Jakarta Kota', 28, 'TJ'), ('Juanda', 9, 'TJ'), ('Bundaran HI', 10, 'TJ')],
+    'Jakarta Kota': [('Monas', 28, 'TJ'), ('Manggarai', 20, 'KRL')],
     'Juanda': [('Senen Sentral', 25, 'TJ'), ('Monas', 9, 'TJ')],
     'Senen Sentral': [('Jatinegara', 13, 'KRL'), ('Juanda', 25, 'TJ'), ('Matraman', 32, 'TJ')],
 }
